@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model MenuModel
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<form action="/" method="post">
+
+@for (var i = 0; i <  Model.Items.Count(); i++)
+{
+
+    @*<input type="hidden" name="Model.Items.Index" value="@i" />*@
+    @Html.TextBoxFor(x => Model.Items[i].Id, new { @class = "form-control", @readonly = "readonly" })
+    @Html.TextBoxFor(x => Model.Items[i].MenuId, new { @class = "form-control", @readonly = "readonly" })
+    @Html.TextBoxFor(x => Model.Items[i].Type, new { @class = "form-control", @readonly = "readonly" })
+    @Html.TextBoxFor(x => Model.Items[i].Title, new { @class = "form-control", @readonly = "readonly" })
+    @Html.TextBoxFor(x => Model.Items[i].Url, new { @class = "form-control", @readonly = "readonly" })
+    @Html.TextBoxFor(x => Model.Items[i].CssClass, new { @class = "form-control", @readonly = "readonly" })
+    @Html.TextBoxFor(x => Model.Items[i].DisplayOrder, new { @class = "form-control", @readonly = "readonly" })
+    @Html.TextBoxFor(x => Model.Items[i].EntityId, new { @class = "form-control", @readonly = "readonly" })
+    @Html.TextBoxFor(x => Model.Items[i].CatalogTemplate, new { @class = "form-control", @readonly = "readonly" })
+    @Html.TextBoxFor(x => Model.Items[i].ParentMenuItemId, new { @class = "form-control", @readonly = "readonly" })
+}
+
+    @*@foreach (MenuItemModel menuItem in Model.Items)
+    {
+        menuItem.DepthLevel = 0;
+        @await Html.PartialAsync("MegaMenuItem", menuItem)
+    }*@
+    <button type="submit">Save</button>
+</form>
