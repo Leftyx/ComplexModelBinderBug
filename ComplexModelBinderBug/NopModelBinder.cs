@@ -6,12 +6,12 @@ using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 using Microsoft.Extensions.Logging;
 
-namespace WebApplication1
+namespace ComplexModelBinderBug
 {
     /// <summary>
     /// Represents model binder for the binding models inherited from the BaseNopModel
     /// </summary>
-    public class NopModelBinder : Binders.Ver217.ComplexTypeModelBinder
+    public class NopModelBinder : Binders.ComplexTypeModelBinder
     {
         #region Ctor
 

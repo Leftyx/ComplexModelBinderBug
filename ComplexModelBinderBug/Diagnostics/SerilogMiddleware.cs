@@ -8,7 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http.Features;
 
-namespace WebApplication1.Diagnostics
+namespace ComplexModelBinderBug.Diagnostics
 {
     class SerilogMiddleware
     {

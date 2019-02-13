@@ -10,7 +10,7 @@ using Microsoft.Extensions.Logging;
 using Serilog;
 using Serilog.Events;
 
-namespace WebApplication1
+namespace ComplexModelBinderBug
 {
     public class Program
     {

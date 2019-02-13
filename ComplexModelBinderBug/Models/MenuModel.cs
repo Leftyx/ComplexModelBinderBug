@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace WebApplication1.Models
+namespace ComplexModelBinderBug.Models
 {
     // Token: 0x0200004B RID: 75
     public class MenuModel : BaseNopEntityModel

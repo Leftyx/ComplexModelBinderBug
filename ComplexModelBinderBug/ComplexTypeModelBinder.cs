@@ -12,12 +12,12 @@ using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 
-namespace WebApplication1.Binders
+namespace ComplexModelBinderBug.Binders
 {
     /// <summary>
     /// <see cref="IModelBinder"/> implementation for binding complex types.
     /// </summary>
-    public class ComplexTypeModelBinder : IModelBinder
+    public class ComplexTypeModelBinder_OLD : IModelBinder
     {
         internal const int PropertyDataNotAvailable = 0;
         internal const int PropertyDataMayBeAvailable = 1;

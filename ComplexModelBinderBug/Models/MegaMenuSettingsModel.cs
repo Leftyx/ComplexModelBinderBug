@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebApplication1.Models
+namespace ComplexModelBinderBug.Models
 {
     // Token: 0x02000047 RID: 71
     public class MegaMenuSettingsModel
