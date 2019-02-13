@@ -11,7 +11,7 @@ namespace ComplexModelBinderBug
     /// <summary>
     /// Represents model binder for the binding models inherited from the BaseNopModel
     /// </summary>
-    public class NopModelBinder : Binders.ComplexTypeModelBinder
+    public class NopModelBinder : ComplexTypeModelBinder
     {
         #region Ctor
 
